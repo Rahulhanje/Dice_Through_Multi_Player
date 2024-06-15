@@ -1,0 +1,129 @@
+* {
+    border: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+img {
+    border-radius: 50px;
+}
+
+.players {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    font-size: 2em;
+    color: rgb(83, 83, 153);
+    font-family: 'Pacifico', cursive;
+}
+
+.img img {
+    width: 300px;
+    height: 300px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgba(19, 76, 88, 0.942);
+    font-size: 5em;
+}
+
+.player1, .player2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+button {
+    height: 50px;
+    margin: 5px;
+    width: 120px;
+    background: #ed0f0f; /* Red background color */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #e80c0c 1px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #f10a0a, #d70e0e);
+    -webkit-box-shadow: -1px -5px 15px #d01c1c, 5px 5px 15px #c32b0c,
+      inset 5px 5px 10px #ef0909, inset -5px -5px 10px #cc0404;
+    box-shadow: -1px -5px 15px #383b45, 5px 5px 15px #e40b0b,
+      inset 5px 5px 10px #e40000, inset -5px -5px 10px #be0707;
+}
+
+button:hover {
+    background: #c60808; /* Darker red on hover */
+}
+
+  button:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  
+  button:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+  
+@media (max-width: 480px) {
+    .img img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .players {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .player1, .player2 {
+        gap: 10px;
+    }
+}
